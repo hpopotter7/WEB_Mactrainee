@@ -1,0 +1,12 @@
+Flexslider
+	http://flex.madebymufffin.com/
+	http://www.woothemes.com/flexslider/
+
+Botón Sociales
+	Facebook
+		https://developers.facebook.com/docs/reference/plugins/like/
+		https://developers.facebook.com/docs/plugins/
+
+	Twitter
+		https://twitter.com/logo
+		https://twitter.com/about/resources/buttons

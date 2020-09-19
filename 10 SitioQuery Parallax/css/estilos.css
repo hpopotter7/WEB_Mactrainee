@@ -1,0 +1,104 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
+
+*{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+
+a
+{
+	color: #1E6381;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: red;
+	padding: .25em ;
+	font-size: 1em;
+
+}
+
+body, html
+{
+	font-family: 'Montserrat Alternates';
+	font-size: 16px;
+	min-height: 100%;
+	position: absolute;
+	text-align: center;
+	width: 100%
+}
+
+footer, header
+{
+	background: #c6ecf9;
+	border-bottom: thin solid #57abb8;
+	width: 100%;
+}
+
+footer
+{
+	border-bottom: 0;
+	border-top: thin solid #57abb8;
+	bottom: 0;
+	font-size: .75em;
+	padding: .5em 0;
+	/*Posicionamiento en CSS:
+	http://librosweb.com/css/capitulo5.html*/
+	position: absolute; /* static - absolute - relative - fixed */
+}
+
+header h1, nav
+{
+	display: inline-block;
+	vertical-align: middle;
+	width: 30%;
+}
+
+img
+{
+	max-width: 30%;
+}
+
+nav
+{
+	width: 65%;
+}
+
+nav li
+{
+	border-right: thin solid #f60;
+	display: inline-block;
+	list-style: none;
+	padding: .5em 1em;
+}
+
+nav li:last-child
+/*
+	:first-child = es el primer elemento
+	:nth_child(n) = es el No. de hijo
+	:last-child = es el ultimo elemtento;
+	*/
+{
+	border:0;
+}
+
+#contenido
+{
+	height: auto;
+	margin: 1em auto 2em;
+	width: 100%;
+}
+
+.cambio
+{
+	-ms-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out;
+	-o-transition: all .5s ease-out;
+	-webkit-transition: all .5s ease-out;
+	transition: all .5s ease-out;
+}
+
+

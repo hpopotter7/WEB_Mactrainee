@@ -1,0 +1,38 @@
+*
+{
+	border:0;
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background: skyblue;
+	color: purple;
+	font-size: 2em;
+	text-align: center;
+}
+
+section
+{
+	width: 90%;
+	margin: .5em auto;
+}
+
+.mostrado, .oculto
+{
+	border-radius: 1.5em;
+	height: 200px;
+	min-width: 31%;
+	max-width: 35%;
+	margin: auto;
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+
+.mostrado
+{
+	background: black;
+}
+

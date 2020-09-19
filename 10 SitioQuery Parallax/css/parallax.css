@@ -1,0 +1,56 @@
+body, html, section
+{
+	height: 100%;
+}
+
+header
+{
+	padding-top: 1em;
+}
+
+footer
+{
+	position: static;
+}
+section
+{
+	padding-top: 3em;
+}
+
+#parallax
+{
+	background: black;
+	left:17.5%; /*se saca la mitad del nav para centrorlo con respecto a left*/
+	min-width: 100px;
+	padding: 0;
+	position: fixed;
+	top: 10%;
+}
+
+#parallax2
+{
+	background: blue;
+	bottom:40%; /*se saca la mitad del nav para centrorlo con respecto a left*/
+	margin:; auto;
+	padding: 0;
+	position: fixed;
+	right: -8%;
+	width: 10%;
+	-ms-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out;
+	-o-transition: all .5s ease-out;
+	-webkit-transition: all .5s ease-out;
+	transition: all .5s ease-out;
+}
+
+#parallax2 li
+{
+	border: 0;
+	display: block;
+}
+
+#parallax2:hover
+{
+	right: 0;
+}
+

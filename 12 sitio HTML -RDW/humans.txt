@@ -1,0 +1,23 @@
+ /* bextlan.com | lugar de... bits, vectores y pixeles. - http://bextlan.com */
+
+/* TEAM */
+	Fundador: Jonathan MirCha
+	Contacto: jonmircha [at] bextlan.com
+	Twitter: @jonmircha
+	From: Mexico, DF
+
+/* IN MEMORIAL */
+	Bryan http://bextlan.com/Bryan
+
+/* THANKS */
+	@laflaca_ Gracias por ser el amor de mi vida
+	@silvercorp http://silvercorp.wordpress.com
+	@ICONOS_INST http://www.iconos.edu.mx
+	@talaherrera http://talaherrera.com
+
+/* SITE */
+	Last update: 2013/01/17
+	Language: Español
+	Standars: HTML5, CSS3, JavaScript, PHP
+	Components: Responsive Design, jQuery, CodeIgniter, MySQL
+	Software: SublimeText2, Chrome, Fireworks 

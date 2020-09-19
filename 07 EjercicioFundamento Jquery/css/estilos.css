@@ -1,0 +1,45 @@
+#ajax
+{
+	background: gray;
+	color: white;
+	height: 300px;
+}
+
+#cuadro
+{
+	background:yellow;
+	width:300px;
+	height:300px;
+}
+
+.capa-animable, .capa-animable2
+{
+	background:#98bf21;
+	height:100px;
+	position:relative; /*static|absolute|relative|fixed*/
+	width:100px;
+}
+
+.capa-deslizante
+{
+	display:none;
+	height:120px;
+}
+
+.capa-deslizante, .mostrar, .mostrar-ocultar, .ocultar
+{
+	background:#e5eecc;
+	border: solid 1px #c3c3c3;
+	cursor: pointer;
+	margin:0;
+	padding: 0.5em;
+	text-align: center;
+}
+		
+.span-css
+{
+	background: #F60;
+	display: block;
+	font-size: 3em;
+   	font-weight: bold;
+}

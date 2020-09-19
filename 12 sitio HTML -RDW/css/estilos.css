@@ -1,0 +1,609 @@
+/*
+1) -Diseño fluido:
+		-Olvidarse del prefect pixel
+		-Utilizar unidades relativas em y %
+		-Emplear Máximos y minimos en width y height:
+
+2) Objetos Flexibles
+
+3) Empleo de mediaqueris
+
+4)Utilizar el viewport
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+*{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face
+{
+	font-family: "chaletcito";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../fonts/Chalet.eot);
+	src: url(../fonts/Chalet.eot?#iefix) format("embedded-opentype"),
+		 url(../fonts/Chalet.ttf) format("truetype"),
+		 url(../fonts/Chalet.svg) format("svg"),
+		 url(../fonts/Chalet.woff) format("woff");
+}
+
+a
+{
+	color:#1e6381;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #f60;
+}
+
+blockquote p
+{
+	padding: 1em;
+	text-align: justify;
+}
+
+blockquote p:first-child
+{
+	text-align: center;
+}
+
+blockquote p:last-child
+{
+	text-align: right;
+}
+
+body, html
+{
+	background: white;
+	color: black;
+	font-family: "chaletcito", Verdana;
+	font-size: 16px;
+	min-height: 100%;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+
+}
+ 
+fieldset
+{
+	border: thin solid #c6ecf9;
+	border-radius: .5em;
+	padding: 1em;
+}
+
+form
+{
+	margin: auto;
+	padding: .25em 0;
+	width: 95%;
+}
+
+form div
+{
+	margin: .5em auto;
+}
+
+ footer, header, #contenido
+ {
+ 	background: #c6ecf9;
+ 	-ms-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	-o-box-sizing: border-box;
+ 	-webkit-box-sizing: border-box;
+ 	box-sizing: border-box;
+ 	margin: 0 auto;
+ 	width: 90%;
+ }
+
+ footer
+ {
+ 	border-top: thin solid #57abb8;
+ 	bottom: 0;
+ 	left: 5%;
+ 	font-size: .75em;
+ 	padding: .5em 0;
+ 	position: absolute;  
+ 	border-radius: 1em 1em 0 0;
+ }
+
+ h2, h3
+ {
+ 	color: #c6ecf9;
+ 	padding: 1em 0;
+ 	text-shadow: .1em .1em .5em rgba(0,0,0,.8);
+ }
+
+ h3
+ {
+	color: #ff0;
+	font-size: 2em;
+	text-shadow:.1em .1em .5em (255,255,255,.5);
+ }
+
+ hr
+ {
+ 	border: thin dotted #f60;
+ 	margin: .5em auto;
+ 	width: 95%;
+ }
+
+header
+{
+	border-bottom: thin solid #57abb8;
+	
+}
+header h1, nav
+{
+	display: inline-block;
+	text-align: left;
+	vertical-align: bottom;
+	width: 25%
+}
+
+label
+{
+	cursor: pointer;
+	display: block;
+	margin: .5em auto;
+	text-align: left;
+}
+
+legend
+{
+	color: black;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-shadow: -.1em -.1em .5em #fff;
+	
+}
+
+iframe
+{
+	border-radius: .6em;
+}
+
+iframe, img, video
+{
+	max-width: 100%;
+	cursor: pointer;
+}
+
+input[type="email"], input[type="text"], textarea
+{
+	background: #eee;
+	border-radius: .25em;
+	color: #f60;
+	font-size: 1em;
+	padding: .25;
+	width: 95%;
+}
+
+input[type="email"]:hover, input[type="text"]:hover, textarea:hover
+{
+	background: rgba(123,9,144,.1);
+	
+}
+
+input[type="submit"]
+{
+	background: #c6ecf9;
+	border-radius: 0 .25em;
+	color: #f60;
+	font-family: "chalecito";
+	font-size: 1.25em;
+	padding: .25em;
+}
+
+input[type="submit"]:hover
+{
+	background: rgba(2,49,44,.19);
+	border-radius: .29em 0;
+	color: #eee;
+	cursor: pointer;
+}
+
+nav
+{
+	font-size: 1.3em;
+	text-align: right;
+	width: 70%;
+}
+
+nav li
+{
+	cursor: pointer;
+	display: inline-block;
+	list-style: none;
+	padding: 0 .5em;
+	vertical-align: bottom;
+}
+
+nav li a
+{
+	background: gray;
+	border: thin dotted #f60;
+	border-radius: 1em 1em 0 0;
+	padding: .5em .5em 0 .5em;
+}
+
+nav li a:hover
+{
+	background: white;
+	border: thick solid #f60;
+	top: 10%;
+}
+
+textarea
+{
+	resize:none;
+}
+
+#acerca-descripcion, #acerca-multimedia, #mapa, #contacto, #tecnologias-descripcion
+{
+	background: rgba(30,99,129, .80);
+	border-radius: 1em;
+	-ms-box-sizing : borde-box;
+	-moz-box-sizing : borde-box;
+	-o-box-sizing : borde-box;
+	-webkit-box-sizing : borde-box;
+	box-sizing : borde-box;
+	color: #FFF;
+	display: inline-block;
+	margin: 0 auto;
+	min-height: 900px;
+	padding: .5em auto;
+	vertical-align: top;
+	width: 50%;
+}
+ 
+#acerca-multimedia, #mapa
+{
+	width: 45%;
+}
+
+#acerca-multimedia cite
+{
+	color: yellow;
+	display: block;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-shadow: .1em .1em .5em #fff;
+}
+
+#acerca-multimedia figcaption
+{
+	cursor: pointer;
+	display: none;
+}
+
+#acerca-multimedia figure, #acerca-multimedia video
+{
+	cursor: pointer;
+	padding: 2em 0;
+}
+
+#contacto, #mapa
+{
+	min-height: 650px;
+}
+
+#contacto aside
+{
+	background: rgba(255,255,255,.5);
+	border: thin solid #1e6381;
+	border-radius: 1em;
+	box-shadow: .1em .1em .5em rgba(0,0,0,.5) inset;
+	margin: 1em auto;
+	padding: 1em .5em;
+	width: 60%;
+}
+#contacto aside article
+{
+	display: inline-block;
+	margin: 0 1em;
+	vertical-align: top;
+}
+
+#contenido
+{
+	background: #eee;
+	font-family: "Open Sans", Verdana;
+	height: auto;
+	padding: 1em 0 2em;
+}
+
+#contenido a
+{
+	color: #c6ecf9;
+}
+
+#contenido a:hover
+{
+	color: #f60;
+}
+
+#tecnologias-descripcion
+{
+	box-shadow: -.1em -.1em 1em #fff inset;
+	display: block;
+	margin-bottom: 1em;
+	min-height: 0;
+	padding-bottom: 2em;
+	width: 95%;
+}
+
+#tecnologias-descripcion div
+{
+	background: rgba(238,238,238,.5);
+	border-radius: .5em;
+	color: #000;
+	margin: 1em auto;
+	padding: 1em;
+	text-align: justify;
+}
+
+#tecnologias-descripcion p
+{
+	padding: .5em;
+	text-align: justify;
+}
+
+#precarga, #respuesta
+{
+	display: none;
+}
+
+#contacto, #mapa
+{
+	padding: .7em 0 0 0;
+}
+
+.cambio
+{
+	-ms-transition: all .8s ease-out;
+	-moz-transition: all .8s ease-out;
+	-o-transition: all .8s ease-out;
+	-webkit-transition: all .8s ease-out;
+	transition: all .8s ease-out;
+}
+
+.mensaje
+{
+	background: rgba(255,102,0,.75);
+	border-radius: .5em;
+	box-shadow: .1em .1em .5em rgba(255,255,0,.5) inset;
+	font-weight: bold;
+	padding: .25em 0em;
+	text-shadow: .1em .1em .5em #000;
+}
+
+.tecnologias
+{
+	color:#f60;
+	display: inline-block;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 1em;
+	padding: 0;
+	vertical-align: top;
+	width: 22%;
+}
+
+.redonda
+{
+	border-radius: 100%;
+}
+
+.tecnologias figcaption
+{
+	opacity: 0;
+}
+
+.tecnologias img
+{
+	background: #c6ecf9;
+	border: thin solid transparent;
+	box-shadow: .1em .1em 1em rgba(0,0,0,.3);
+}
+
+.tecnologias img:hover
+{
+	background: rgba(255,102,0,.75);
+	border: thick solid #57abb8;
+	box-shadow: .1em .1em 1em rgba(255,255,255,.7) inset;
+	-ms-transform: rotate(360deg) scale(.75,.75);
+	-moz-transform: rotate(360deg) scale(.75,.75);
+	-o-transform: rotate(360deg) scale(.75,.75);
+	-webkit-transform: rotate(360deg) scale(.75,.75);
+	transform: rotate(360deg) scale(.75,.75);
+}
+
+/*breakpoints para rwd 320 480 600 768 1024 1200*/
+@media screen and (max-width: 1200px){
+	footer
+	{
+		background: red;
+	}
+	nav
+	{
+		font-size: 1.2em;
+
+	}
+	nav li
+	{
+		padding: 0 .25em;
+
+	}
+
+	#acerca-descripcion, #acerca-multimedia
+	{
+		min-height: 850px;
+		width: 48%;
+	}
+	#acerca-descripcion blockquote p:nth-child(4)
+	{
+		display: none;
+	}
+	#contacto aside
+	{
+		width: 80%;
+	}
+}
+@media screen and (max-width: 1024px){
+	footer
+	{
+		background: green;
+	}
+	header
+	{
+		padding-bottom: 1em;
+	}
+	header h1, nav
+	{
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+
+	#acerca-multimedia, #acerca-descripcion
+	{
+		display: block;
+		width: 100%;
+		min-height: 0;
+		border-radius: 0;
+	}
+
+	#acerca-descripcion blockquote p:nth-child(4)
+	{
+		display: block;
+	}
+
+	#acerca-descripcion blockquote
+	{
+		-ms-column-count: 2;
+		-ms-column-gap: 1em;
+		-ms-column-rule: thin dashed #f60;
+		-moz-column-count: 2;
+		-moz-column-gap: 1em;
+		-moz-column-rule: thin dashed #f60;
+		-o-column-count: 2;
+		-o-column-gap: 1em;
+		-o-column-rule: thin dashed #f60;
+		-webkit-column-count: 2;
+		-webkit-column-gap: 1em;
+		-webkit-column-rule: thin dashed #f60;
+		column-count: 2;
+		column-gap: 1em;
+		column-rule: thin dashed #f60;
+	}
+
+	#contacto, #mapa
+	{
+		min-height:670px;
+	}
+
+	#contacto aside
+	{
+		width:95%;
+	}
+	
+
+}
+@media screen and (max-width: 768px){
+	footer
+	{
+		background: blue;
+	}
+	footer, header, #contenido
+	{
+		left: 0;
+		width: 100%;
+	}
+	nav
+	{
+		font-size: 1.1em;
+		top: 0;
+	}
+
+	#contacto, #mapa
+	{
+		border-radius: 0;
+		display: block;
+		min-height: 0;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+	#contacto aside
+	{
+		width: 60%;
+
+	}
+
+	#mapa iframe
+	{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 600px){
+	footer
+	{
+		background: cyan;
+	}
+	nav
+	{
+		font-size: 1.4em;
+	}
+	nav li{
+		padding-bottom: 2em;
+		padding-right: 1.5em;
+	}
+
+	#acerca-descripcion blockquote
+	{
+		-ms-column-count: 1;
+		-moz-column-count: 1;
+		-o-column-count: 1;
+		-webkit-column-count: 1;
+		column-count: 1;
+		
+	}
+
+	#contacto aside article
+	{
+		margin: 0 .5em;
+	}
+@media screen and (max-width: 480px){
+	footer
+	{
+		background: magenta;
+	}
+	#contacto aside
+	{
+		width: 96%;
+	}
+
+	#mapa iframe
+	{
+		max-height: 60%;
+	}
+
+	/*falto el magenta xD*/
+}
+
+@media screen and (max-width: 320px){
+	footer
+	{
+		background: yellow;
+	}
+
+	/*Por lo general este ya no se usa o ya no hay que adaptarlo debido a las dimensiones tan pequeñas*/
+}

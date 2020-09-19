@@ -1,0 +1,224 @@
+/*
+1) -Diseño fluido:
+		-Olvidarse del prefect pixel
+		-Utilizar unidades relativas em y %
+		-Emplear Máximos y minimos en width y height:
+
+2) Objetos Flexibles
+
+3) Empleo de mediaqueris
+
+4)Utilizar el viewport
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+*{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face
+{
+	font-family: "chaletcito";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../fonts/Chalet.eot);
+	src: url(../fonts/Chalet.eot?#iefix) format("embedded-opentype"),
+		 url(../fonts/Chalet.ttf) format("truetype"),
+		 url(../fonts/Chalet.svg) format("svg"),
+		 url(../fonts/Chalet.woff) format("woff");
+}
+
+a
+{
+	color:#1e6381;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #f60;
+}
+
+body, html
+{
+	background: white;
+	color: black;
+	font-family: "chaletcito", Verdana;
+	font-size: 16px;
+	min-height: 100%;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+
+}
+ 
+ footer, header, #contenido
+ {
+ 	background: #c6ecf9;
+ 	-ms-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	-o-box-sizing: border-box;
+ 	-webkit-box-sizing: border-box;
+ 	box-sizing: border-box;
+ 	margin: 0 auto;
+ 	width: 90%;
+ }
+
+ footer
+ {
+ 	border-top: thin solid #57abb8;
+ 	bottom: 0;
+ 	left: 5%;
+ 	font-size: .75em;
+ 	padding: .5em 0;
+ 	position: absolute;  
+ 	border-radius: 1em 1em 0 0;
+ }
+
+header
+{
+	border-bottom: thin solid #57abb8;
+	
+}
+header h1, nav
+{
+	display: inline-block;
+	text-align: left;
+	vertical-align: bottom;
+	width: 25%
+}
+
+img
+{
+	max-width: 100%
+}
+
+nav
+{
+	font-size: 1.3em;
+	text-align: right;
+	width: 70%;
+}
+
+nav li
+{
+	cursor: pointer;
+	display: inline-block;
+	list-style: none;
+	padding: 0 .5em;
+	vertical-align: bottom;
+}
+
+nav li a
+{
+	background: gray;
+	border: thin dotted #f60;
+	border-radius: 1em 1em 0 0;
+	padding: .5em .5em 0 .5em;
+}
+
+nav li a:hover
+{
+	background: white;
+	border: thick solid #f60;
+	top: 10%;
+}
+
+#contenido
+{
+	background: #eee;
+	font-family: "Open Sans", Verdana;
+	height: auto;
+	padding: 1em 0 2em;
+}
+
+.cambio
+{
+	-ms-transition: all .8s ease-out;
+	-moz-transition: all .8s ease-out;
+	-o-transition: all .8s ease-out;
+	-webkit-transition: all .8s ease-out;
+	transition: all .8s ease-out;
+}
+
+/*breakpoints para rwd 320 480 600 768 1024 1200*/
+@media screen and (max-width: 1200px){
+	footer
+	{
+		background: red;
+	}
+	nav
+	{
+		font-size: 1.2em;
+	}
+	nav li
+	{
+		padding: 0 .25em;
+	}
+}
+@media screen and (max-width: 1024px){
+	footer
+	{
+		background: green;
+	}
+	header
+	{
+		padding-bottom: 1em;
+	}
+	header h1, nav
+	{
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+	
+
+}
+@media screen and (max-width: 768px){
+	footer
+	{
+		background: blue;
+	}
+	footer, header, #contenido
+	{
+		left: 0;
+		width: 100%;
+	}
+	nav
+	{
+		font-size: 1.1em;
+		top: 0;
+	}
+}
+@media screen and (max-width: 600px){
+	footer
+	{
+		background: cyan;
+	}
+	nav
+	{
+		font-size: 1.4em;
+	}
+	nav li{
+		padding-bottom: 2em;
+		padding-right: 1.5em;
+	}
+@media screen and (max-width: 480px){
+	footer
+	{
+		background: magenta;
+	}
+
+	/*falto el magenta xD*/
+}
+
+@media screen and (max-width: 320px){
+	footer
+	{
+		background: yellow;
+	}
+	/*Por lo general este ya no se usa o ya no hay que adaptarlo debido a las dimensiones tan pequeñas*/
+}

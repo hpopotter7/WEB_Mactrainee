@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="utf-8" />
+        <title>Responsive Web Design -- Copntacto</title>
+        <meta name="description" content="En este ejercicio aprenderas a implementar un formulario y enmviar los datos con jQuery, AJAX y PHP; además un mapa de contacto y botones solciales." />
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+        <!-- http://convertico.com -->
+        <link rel="shorcut icon" type="image/x-icon" href="favicon.ico"/>
+         <!-- para tablets 57px x 57px -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+         <!-- http://humanstxt.org -->
+        <link rel="author" href="text/plain" herf="humans-txt"/>
+         <!-- http://sitemaps.com y generador htt://xml.sitemaps.com -->
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml"/>
+        <link rel="stylesheet" href="css/estilos.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script>
+        	!window.jquery && document.write("<script src='js/query.min.js'><\/script>");
+        </script>
+        <script src="js/jquery.form.js"></script>
+        <script src="js/efectos.js"></script>
+        <script>
+        	$(document).on("ready", enviarDatos);
+        </script>
+       
+</head>
+<body>
+	<header>
+		<h1>
+			<a href="index.html"><img src="http://bextlan.com/img/bextlan.png" title="bextlan"></a>
+		</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html" class="cambio">Inicio</a></li>
+				<li><a href="acerca.html" class="cambio">Acerca</a></li>
+				<li><a href="contacto.html" class="cambio">Contacto</a></li>
+				<li><a href="tecnologias.html" class="cambio">Tecnologias</a></li>
+				<li><a href="recomendaciones.html" class="cambio">Recomendaciones</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="contenido">
+		<section id="contacto">
+			<form id="contacto-datos" name="contacto_frm" action="contacto.php" method="post">
+				<fieldset>
+					<legend>
+						Envianos tus comentarios
+					</legend>
+					<div>
+						<label for="nombre">Nombre:</label>
+						<input type="text" id="nombre" class="cambio" name="nombre_txt" pattern="[A-Za-zÑñÁáÉéÍíÓóúÚÜü\s]+" placeholder="Escribe tu nombre" required title="Tu nombre"/>
+					</div>
+					<div>
+						<label for="email">Email:</label>
+						<input type="email" id="email" class="cambio" name="email_txt" placeholder="Escribe tu email" required title="Tu email"/>
+
+					</div>
+					<div>
+						<label for="asunto">Asunto:</label>
+						<input type="text" id="asunto" class="cambio" name="asunto_txt" placeholder="Asunto a tratar" required title="Tu asunto"/>
+
+					</div>
+					<div>
+						<label for="comentarios">Comentarios:</label>
+						<textarea id="comentarios" class="cambio" name="comentarios_txa" cols="30" rows="5" placeholder="Escribe algun comentario" required title="Tus comentarios"></textarea>
+
+					</div>
+					<div>
+						<input id="enviar" type="submit" class="cambio" name="enviar" value="Enviar" ></input>
+						<img id="precarga" src="img/loader.gif" /><div id="respuesta"></div>
+					</div>
+				</fieldset>
+			</form>
+			<aside>
+				<article>
+					<!-- 
+					Facebook
+					https://developers.facebook.com
+					https://developers.facebook.com/docs/reference/plugins/like/
+					https://developers.facebook.com/docs/plugins/
+					-->
+					<div id="fb-root"></div>
+					<script src="http://connect.facebook.net/es_LA/all.js#xfbml=1"></script>
+			      	<div class="fb-like" data-href="http://facebook.com/bextlan" layout="box_count" data-send="false" data-width="250" data-show-faces="false"></div>
+				</article>
+				<article>
+					<!--
+				      	Twitter
+				      	https://twitter.com/logo
+						https://twitter.com/about/resources/buttons
+			      	-->
+			      	<script src="http://platform.twitter.com/widgets.js"></script>
+					<a href="http://twitter.com/share" class="twitter-share-button" data-via="jonmircha" data-lang="es" data-text="#bextlan.com | lugar de bits, vectores y pixeles. Videotutoriales: HTML5, CSS3, jQuery, PHP, AS3 y más... visítanos =)" data-url="http://bextlan.com/" data-count="vertical">Twittear</a>
+				</article>
+				<article>
+					<!-- Google + -->
+					<script src="https://apis.google.com/js/plusone.js"></script>
+					<g:plusone size="tall" href="http://bextlan.com/"></g:plusone>
+				</article>
+			</aside>
+		</section>
+		<section id="mapa">
+			<!--<iframe width="500" height="570" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.mx/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=Estadio+Santiago+Bernab%C3%A9u,+Avenida+de+Concha+Espina,+Madrid,+Espa%C3%B1a&amp;aq=3&amp;oq=estadio+san+ber&amp;sll=23.554131,-102.6205&amp;sspn=35.071389,63.457031&amp;ie=UTF8&amp;hq=Estadio+Santiago+Bernab%C3%A9u,+Avenida&amp;hnear=Concha+Espina&amp;t=h&amp;fll=40.45285,-3.688271&amp;fspn=0.0018,0.003873&amp;st=104572738475771099941&amp;rq=1&amp;ev=zi&amp;split=1&amp;ll=40.449822,-3.682195&amp;spn=0.0018,0.003873&amp;output=embed"></iframe><br /><a href="http://maps.google.com.mx/maps?f=q&amp;source=embed&amp;hl=es&amp;geocode=&amp;q=Estadio+Santiago+Bernab%C3%A9u,+Avenida+de+Concha+Espina,+Madrid,+Espa%C3%B1a&amp;aq=3&amp;oq=estadio+san+ber&amp;sll=23.554131,-102.6205&amp;sspn=35.071389,63.457031&amp;ie=UTF8&amp;hq=Estadio+Santiago+Bernab%C3%A9u,+Avenida&amp;hnear=Concha+Espina&amp;t=h&amp;fll=40.45285,-3.688271&amp;fspn=0.0018,0.003873&amp;st=104572738475771099941&amp;rq=1&amp;ev=zi&amp;split=1&amp;ll=40.449822,-3.682195&amp;spn=0.0018,0.003873">Ver mapa más grande</a>-->
+<iframe width="425" height="350" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="https://maps.google.com.mx/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=Avenida+Francisco+Sarabia,+Ram%C3%B3n+Farias,+Uruapan&amp;aq=0&amp;oq=sarabia+uruapan&amp;sll=20.581408,-100.400469&amp;sspn=0.010888,0.021136&amp;ie=UTF8&amp;hq=&amp;hnear=Av+Francisco+Sarabia,+Uruapan,+Michoac%C3%A1n&amp;ll=19.418265,-102.053575&amp;spn=0.001229,0.002642&amp;t=m&amp;z=14&amp;output=embed"></iframe><br/><a href="https://maps.google.com.mx/maps?f=q&amp;source=embed&amp;hl=es&amp;geocode=&amp;q=Avenida+Francisco+Sarabia,+Ram%C3%B3n+Farias,+Uruapan&amp;aq=0&amp;oq=sarabia+uruapan&amp;sll=20.581408,-100.400469&amp;sspn=0.010888,0.021136&amp;ie=UTF8&amp;hq=&amp;hnear=Av+Francisco+Sarabia,+Uruapan,+Michoac%C3%A1n&amp;ll=19.418265,-102.053575&amp;spn=0.001229,0.002642&amp;t=m&amp;z=14" style="color:#0000FF;text-align:left">Ver mapa más grande</a>
+
+			
+
+		</section>
+	</section>
+	<footer>
+		Sitio hecho por Alan. Abril 2013.
+	</footer>
+</body>
+</html>

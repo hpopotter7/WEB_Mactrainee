@@ -1,0 +1,95 @@
+a#anterior
+{
+	right: -35px;
+}
+
+a#anterior:hover
+{
+	right: -25px;
+}
+
+a#siguiente
+{
+	left: -35px;
+}
+
+a#siguiente:hover
+{
+	left: -25px;
+}
+
+
+
+body
+{
+	background: #7bbfd5;
+	font-size: 16px;
+}
+
+section
+{
+	margin: 2em auto; /*ES para centrar el <section>*/
+	text-align: center;
+	width: 98%;
+
+}
+
+section a 
+{
+	background: #ededed;
+	border-radius: 50%;
+	color: #444;
+	font-size: 5em;
+	/* http://librosweb.es/referencia_css/line_height.html */
+	line-height: 60px;
+	padding-bottom: 12px;
+	position: relative;
+	text-decoration: none;
+	width: 72px;
+	z-index: 2; 
+}
+
+section a:hover
+{
+	background: #cdcdcd;
+	color: black;
+}
+
+section a, #galeria
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#galeria
+{
+	border: .5em solid white;
+	border-radius: .45em;
+	box-shadow: .1em .1em .5em rgba(0,0,0,.5);
+	overflow: hidden;
+	position: relative;
+	width: 960px;
+	z-index: 1;
+}
+
+#galeria ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+
+#galeria li
+{
+	background: #212121;
+	float: left;
+	font-size: 2em;
+	height: 540px;
+	line-height: 540px;
+	margin: 0;
+	position: relative;
+	width: 960px;
+
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Primeros pasos en JavaScript</title>
+	<meta name="description" content="Primeros pasos par aprender Java Script" />
+	
+</head>
+
+<body>
+		<h2>Mostrar Fecha</h2>
+		<script>
+//cometario en linea
+/*comentario multilinea
+	http://bextland.com/slides/js
+	http://librosweb.es/javascript/index.html
+
+	POO.- Trata de plasmar o representar la realidad del mundo físico y llevarlo al mundo digital;
+
+	4 palabras claves en POO
+
+	1.-clase perro()
+	2.- objeto kenai=new perro()
+		Los objetos tienenn 2 facultades:
+			3.- Metodos -->> acciones correr();
+			4.- Funciones  function ladrar(){....}
+			5.-Atributos visible=false;
+			variable: var nombre="Kenai";
+
+	DOM	 Document Objet Model
+	http://es.wikipedia.org/wiki/Document_Object_Model
+
+	JavaScript 3 objetos principales:
+
+		1)window
+		2)document
+		3)navigator
+
+		1.-Las palabras reservadas van en minusculas cuando solo es de una sola palabra
+		2.- Cuando son de 2 o más la primer palabra es en minusculas y las demas solo la primera de cada letra irá en mayusculas
+		3.- Las clases siempre empiezan por mayusculas
+
+	*/
+	document.write("<h1>"+Date()+"<h1>");
+
+		</script>
+	<hr />
+
+	<h2>Remplazar contenido HTML</h2>
+	<p id="prueba-fecha">Esto es un parrafo</p>
+	<script>
+		document.getElementById("prueba-fecha").innerHTML ="HOLA";
+	</script>
+	<hr />
+
+	<h2>Remplazar contenido HTML con un envento</h2>
+	<p id="prueba-fecha2">Esto es un parrafo</p>
+	<input type="button" value="Mostar Fecha" onclick="mostrarFecha()" />
+	<script>
+	function mostrarFecha(){
+		document.getElementById("prueba-fecha2").innerHTML ="ajua!!!";	}
+		
+	</script>
+	<hr />
+
+	<h2>Variables y Operadores</h2>
+	<script>
+		//declaracion de variable
+		var x=5;
+		x += 10;
+		document.write(x);
+		x = "3"+"3";
+		document.write("<br>"+x);
+		x = "3"+3;
+		document.write("<br>"+x);
+		x = 3+3;
+		document.write("<br>"+x);
+
+	</script>
+	<hr />
+	<script>
+	var modulo = 151%2;
+	document.write(modulo);
+	var tipoNum = (modulo == 1)?"impar":"par";
+	document.write("-"+tipoNum);
+	</script>
+	<hr />
+	<h2>If- else</h2>
+	<script>
+	var fecha =new Date();
+	var hora= fecha.getHours();
+	if(hora<12)
+	{
+document.write("<br>Buenos dias");
+	}
+
+	else if(hora>12 || hora < 19)
+	{
+document.write("<br>Buenas tardes");
+	}
+	else
+	{
+ocument.write("<br>Buenas noches");
+	}
+	</script>
+
+
+	<!-- switch -->
+	<h2>Switch - Case</h2>
+	<script>
+	
+	var dia= fecha.getDay();
+	switch(dia)
+	{
+		case 0:
+			document.write("<br> Domingo");
+			break;
+		case 5:
+			document.write("<br> Por fin Viernes");
+			break;
+		case 6:
+			document.write("<br> Sabadito :D");
+			break;
+		 default:
+			document.write("<br> Esperando a que llegue el vienres -_-");
+			break;
+
+	}
+	</script>
+
+<!-- cilcos -->
+
+<h2>Ciclos</h2>
+<script>
+	var i;
+
+	for(i=1;i<=6;i++){
+		document.write("<h"+i+"> Encabezado de tipo "+i+"</h"+i+">");
+	}
+	var j=6;
+	while(j>0){
+		document.write("<h"+j+"> Encabezado de tipo "+j+"</h"+j+">");
+  	j--;
+	}
+
+</script>
+
+<!-- cajas de alerta -->
+<hr/>
+<h2>Cajas de Alerta</h2>
+<script>
+	
+
+	function alerta(){
+		alert("Hola mundo");
+	}
+
+	function alerta2(){
+		confirm("Selecciona una opcion");
+	}
+	function alerta3(){
+		var nombre = prompt("Ingresa tu nombre");
+		document.write(nombre);
+	}
+	function mostrarConsola(){
+		var nombre = prompt("Ingresa tu nombre");
+		console.log(nombre);
+	}
+
+</script>
+<input type="button" value="Mostar alerta" onclick="alerta()" />
+<input type="button" value="Mostar confirm" onclick="alerta2()" />
+<input type="button" value="Mostar dialogo" onclick="alerta3()" />
+<input type="button" value="Mostar consola" onclick="mostrarConsola()" />
+<hr />
+
+<!-- cadenas -->
+<h2>Cadenas</h2>
+<script>
+	
+		var cadena = "Ingresa";
+		
+		document.write(cadena.toUpperCase()+"<br />");
+		document.write(cadena.toLowerCase()+"<br />");
+	}
+
+</script>
+<hr />
+
+<!-- array -->
+<h2>Array</h2>
+<script>
+	
+		var variables = new Array(1,2,3);
+		document.write(variables);
+		
+
+</script>
+<hr />
+
+<h2>Información del navegador</h2>
+<script>
+	document.write("Nombre clave: "+navigator.appCodeName+"<br />");
+	document.write("Nombre: "+navigator.appName+"<br />");
+	document.write("Versión: "+navigator.appVersion+"<br />");
+	document.write("Cookies habilitadas: "+navigator.cookieEnabled+"<br />");
+	document.write("Sistema Operativo: "+navigator.platform+"<br />");
+	document.write("Agente: "+navigator.userAgent+"<br />");
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

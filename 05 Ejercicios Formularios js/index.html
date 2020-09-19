@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="utf-8" />
+        <title>Validación de Formularios con JS</title>
+        <meta name="description" content="En este ejercicio aprenderemos a validar formularios con JavaScript y a darles presentación con CSS." />
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="js/validacion.js"></script>
+</head>
+<body>
+        <form id="contacto-frm" name="contacto_frm" action="" method="get" enctype="application/x-www-form-urlencoded">
+                <fieldset>
+                        <legend>Contacto</legend>
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" id="nombre" name="nombre_txt" />
+                        <br /><br />
+                        <label for="edad">Edad: </label>
+                        <input type="text" id="edad" name="edad_txt" />
+                        <br /><br />
+                        <label for="email">Email: </label>
+                        <input type="text" id="email" name="email_txt" />
+                        <br /><br />
+                        <label for="clave">Clave: </label>
+                        <input type="password" id="clave" name="clave_txt" />
+                        <br /><br />
+                        <label for="clave2">Confirmar Clave: </label>
+                        <input type="password" id="clave2" name="clave2_txt" />
+                        <br /><br />
+                        <label for="sexo">Sexo:</label>
+                        <input type="radio" id="M" name="sexo_rdo" value="M" /><label for="M">Masculino</label>
+                        <input type="radio" id="F" name="sexo_rdo" value="F" /><label for="F">Femenino</label>
+                        <br /><br />
+                        <label for="nacimiento">Fecha de Nacimiento:</label>
+                        <input type="text" id="nacimiento" name="nacimiento_txt" value="aaaa-mm-dd" />
+                        <br /><br />
+                        <label for="region">Región:</label>
+                        <select id="region" name="region_slc">
+                                <option value="" selected>- - -</option>
+                                <option value="america">América</option>
+                                <option value="europa">Europa</option>
+                                <option value="asia">Asia</option>
+                                <option value="africa">África</option>
+                                <option value="oceania">Oceania</option>
+                        </select>
+                        <br /><br />
+                        <label for="archivo">Archivo:</label>
+                        <div class="archivo">
+                                <input type="file" id="archivo" name="archivo_fls" />
+                        </div>
+                        <br /><br />
+                        <label for="social-media">Redes Sociales:</label>
+                        <input type="checkbox" name="twitter_chk" />
+                        <label for="twitter">Twitter</label>
+                        <input type="text" id="twitter" name="twitter_txt" disabled />
+                        &nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="facebook_chk" />
+                        <label for="facebook">Facebook</label>
+                        <input type="text" id="facebook" name="facebook_txt" disabled />
+                        &nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="youtube_chk" />
+                        <label for="youtube">Youtube</label>
+                        <input type="text" id="youtube" name="youtube_txt" disabled />
+                        <br /><br />
+                        <label for="comentarios">Comentarios:</label>
+                        <br />
+                        <textarea id="comentarios" name="comentarios_txa" rows="5" cols="50"></textarea>
+                        <br /><br />
+                        <input type="checkbox" id="condiciones" name="condiciones_chk" />
+                        <label for="condiciones">Acepto Términos y Condiciones</label>
+                        <br /><br />
+                        <input type="button" id="enviar" class="cambio" name="enviar_btn" value="Enviar" />
+                        <input type="button" id="limpiar" class="cambio" name="limpiar_btn" value="Limpiar" />
+                </fieldset>
+        </form>
+</body>
+</html>

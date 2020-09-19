@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="utf-8" />
+        <title>Responsive Web Design</title>
+        <meta name="description" content="En esta seccion aprenderás poruq es importante usar HTML5 en tus proyectos web." />
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+        <!-- http://convertico.com -->
+        <link rel="shorcut icon" type="image/x-icon" href="favicon.ico"/>
+         <!-- para tablets 57px x 57px -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+         <!-- http://humanstxt.org -->
+        <link rel="author" href="text/plain" herf="humans-txt"/>
+         <!-- http://sitemaps.com y generador htt://xml.sitemaps.com -->
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml"/>
+        <link rel="stylesheet" href="css/estilos.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="js/efectos.js"></script>
+        <script>
+        	!window.jquery && document.write("<script src='js/query.min.js'><\/script>");
+        </script>
+        <script>
+        	$(document).on("ready", formulaHTML5);
+        </script>
+       
+</head>
+<body>
+	<header>
+		<h1>
+			<a href="index.html"><img src="http://bextlan.com/img/bextlan.png" title="bextlan"></a>
+		</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html" class="cambio">Inicio</a></li>
+				<li><a href="acerca.html" class="cambio">Acerca</a></li>
+				<li><a href="contacto.html" class="cambio">Contacto</a></li>
+				<li><a href="tecnologias.html" class="cambio">Tecnologias</a></li>
+				<li><a href="recomendaciones.html" class="cambio">Recomendaciones</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="contenido">
+		<article id="acerca-descripcion">
+			<h2>¿Por qué es importante HTML5?</h2>
+			<blockquote cite="http://mejorando.la/guia-html5/">
+				<p>
+					"HTML5 es el presente de la web y si no estás asimilando lo que está pasando ya eres parte de la vieja generación de desarrolladores. Eso tendría que tenerte preocupado"
+				</p>
+				<hr />
+				<p>
+					Entender HTML5 es entender que hoy nos conectamos desde teléfonos móviles, tabletas, eBooks, netbooks, computadores y otra gama de dispositivos. Es entender que se acabaron los webmasters y hoy hablamos de equipos multidiciplinarios de empresas de tecnología que cuentan con frontends, backends, sysadmins, mobile devs, comunity managers y arquitectos de información en los proyectos que están reiventando mercados y generando tráfico e ingresos.
+				</p>
+				<p>
+					Podemos hablar de todas las empresas gigantes de la web, podemos enumerar a Microsoft, Google, Apple, Adobe, Facebook, Yahoo, Mozilla y miles de proyectos tecnológicos que independientemente de sus objetivos hoy respiran HTML5, lo apoyan y tienen propuestas que los hacen competir en código en el navegador más cercano a tu pantalla. Es una de sus más importantes estrategias de posicionamiento y es una de sus más fuertes apuestas de reclutamiento. Dije además que HTML5 tiene logo de superheroe y que venden camisetas para apoyar al movimiento?
+				</p>
+				<p>
+					Si crees que HTML sigue representando las siglas del Hypertext Markup Language no has entendido nada. HTML5 es una época maravillosa de la web que tienes el privilegio de estar disfrutando. No es tecnología, ni es tendencia. Es una época dorada. Disfrutala y embriagate de sus tags.
+				</p>
+				<p>
+					<cite>Guía HTML5. El presente de la web. HTML5, CSS3 y JavaScript.</cite><br />
+					Por <a class="cambio" href="http://mejorando.la/guia-html5/" target="_blank">@mejorandola</a>
+				</p>
+			</blockquote>
+		</article>
+		<article id="acerca-multimedia">
+			<figure>
+				<img  class="cambio" src="img/formula_HTML5.png" title="Fórmula HTML5" />
+				<figcaption>
+					HTML5 es la actualización de HTML, el lenguaje en el que es creada la web. HTML5 tambíen es un tñermino de marketoing para agrupar las nuevas tecnologías de desarrollo de apliaciones web HTML5, CSS3 y las nuevas capacidades de JavaScritp.
+				</figcaption>
+			</figure>
+			<hr/>
+			<video controls preload poster="img/web-hero.jpg">
+				<source src="video/web-super-hero.mp4" type="video/mp4" />
+				<source src="video/web-super-hero.webm" type="video/webm" />
+				<source src="video/web-super-hero.ogv" type="video/ogg" />
+			</video>
+			<cite>It's not late... to save the WEB...<br/> Be a Hero!!
+			</cite>
+		</article>
+	</section>
+	<footer>
+		Sitio hecho por Alan. Abril 2013.
+	</footer>
+</body>
+</html>

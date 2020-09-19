@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="utf-8" />
+        <title>Sn´slidid re implementación de Fancybox 2.0</title>
+        <meta name="description" content="En este ejercicio aprenderemos a analizar plugins de jQuery y poderlos implementar en nuestros proyectos." />
+        <link rel="stylesheet" href="css/jquery.fancybox.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write("<script src='js/jquery.min.js'><\/script>");
+	</script>
+	<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script src="js/fancycode.js"></script>
+        </head>
+<body>
+	<h2>Galeria sencilla con Fancybox 2</h2>
+	<a class="galeria-sencilla" data-fancybox-group="gallery" href="img/normal/img1.jpg" title="imagen 1"><img src="img/thumbs/img1.jpg"></a>
+	<a class="galeria-sencilla" data-fancybox-group="gallery" href="img/normal/img2.jpg" title="imagen 2"><img src="img/thumbs/img2.jpg"></a>
+	<a class="galeria-sencilla" data-fancybox-group="gallery" href="img/normal/img3.jpg" title="imagen 3"><img src="img/thumbs/img3.jpg"></a>
+	<a class="galeria-sencilla" data-fancybox-group="gallery" href="img/normal/img4.jpg" title="imagen 4"><img src="img/thumbs/img4.jpg"></a>
+	<a class="galeria-sencilla" data-fancybox-group="gallery" href="img/normal/img5.jpg" title="imagen 5"><img src="img/thumbs/img5.jpg"></a>
+<p>
+	<h2>Galeria sencilla con Fancybox 2</h2>
+	
+	<a id="efecto1" href="img/normal/img6.jpg" title="imagen 6"><img src="img/thumbs/img6.jpg"></a>
+	<a id="efecto2" href="img/normal/img7.jpg" title="imagen 7"><img src="img/thumbs/img7.jpg"></a>
+	<a id="efecto3" href="img/normal/img8.jpg" title="imagen 8"><img src="img/thumbs/img8.jpg"></a>
+	<a id="efecto4" href="img/normal/img9.jpg" title="imagen 9"><img src="img/thumbs/img9.jpg"></a>
+	<a id="efecto5" href="img/normal/img10.jpg" title="imagen 10"><img src="img/thumbs/img10.jpg"></a>
+
+<p>
+	<h2>Otros contenidos</h2>
+	
+	<a id="error" href="#no-existe">Mostrar error de carga con fancybox</a><br>
+	<a id="mostrar-oculto" href="#oculto">Contenido oculto en el html</a>
+	<div id="oculto" style="display:none">
+		<h3>Este conteido esta oculto en le html tiene un display:none) y se ejecuta con fancybox</h3>
+		<img src="img/normal/img11.jpg" />
+	</div>
+	<br/>
+	<a id="mostrar-por-ajax" class="fancybox.ajax" href="ajax.txt">Contenido cargado por ajax</a>
+	<br/>
+	<a id="mostrar-en-iframe" class="fancybox.iframe" href="http://sandylandia.com.mx">Contenido cargado en IFRAME</a>
+	<br/>
+	<a id="mostrar-swf" href="swf/AnimationVSAnimator.swf">Animaciòn SWF</a>
+	<br/>
+	<a id="youtube" class="fancybox.iframe" href="http://www.youtube.com/embed/astISOttCQ0">Video desde youtube</a>
+	<br/>
+	
+
+</body>
+</body>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>
+			http://tudominio.com/index.html
+		</loc>	
+	</url>
+	<url>
+		<loc>
+			http://tudominio.com/acerca.html
+		</loc>	
+	</url>
+	<url>
+		<loc>
+			http://tudominio.com/contacto.html
+		</loc>	
+	</url>
+	<url>
+		<loc>
+			http://tudominio.com/tecnologias.html
+		</loc>	
+	</url>
+	<url>
+		<loc>
+			http://tudominio.com/recomendaciones.html
+		</loc>	
+	</url>
+</urlset>

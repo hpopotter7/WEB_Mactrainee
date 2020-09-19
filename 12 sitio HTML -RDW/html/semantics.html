@@ -1,0 +1,75 @@
+<style>
+	body
+	{
+		font-family: "Open Sans", Verdana, Arial;
+	}
+
+	input[type="email"]
+	{
+		background: #FFF;
+		border-radius: 0;
+		color: #000;
+		font-size: .75em;
+		padding: 0;
+		width: auto;
+	}
+
+	input[type="email"]:focus
+	{
+		background: #FFF;
+	}
+</style>
+<hgroup>
+	<h2>Implementaciones HTML5</h2>
+	<h3>Semántica</h3>
+</hgroup>
+<div>
+	<p>
+		Nuevos elementos semánticos para cabeceras, encabezados, piés de página, secciones, artículos, menús de navegación, contenido secundario, figuras y nuevos atributos y elementos de formulario.
+	</p>
+	<a href="#tecnologias-ejemplo" class="cambio ejemplo">Ver ejemplo de Semántica</a>
+</div>
+<div id="tecnologias-ejemplo">
+	<h2>Etiquetas Semánticas</h2>
+	<p>
+		<code>&lt;!DOCTYPE html&gt;</code> -> Es el DOCTYPE para HTML5, más simplificado que los de XHTML 1.0, y permite utilizar todas las capacidades del nuevo estándar.
+	</p>
+	<p>
+		<code>&lt;header&gt;&lt;/header&gt;</code> -> Representa la cabecera del documento.
+	</p>
+	<p>
+		<code>&lt;hgroup&gt;&lt;/hgroup&gt;</code> -> Nos permite tener múltiples encabezados h1...h6, sin afectar el SEO del documento.
+	</p>
+	<p>
+		<code>&lt;footer&gt;&lt;/footer&gt;</code> -> Representa el pié de página del documento.
+	</p>
+	<p>
+		<code>&lt;section&gt;&lt;/section&gt;</code> -> Representa un área o zona de contenido específico.
+	</p>
+	<p>
+		<code>&lt;article&gt;&lt;/article&gt;</code> -> Representa un contenido independiente.
+	</p>
+	<p>
+		<code>&lt;nav&gt;&lt;/nav&gt;</code> -> Representa un menú de navegación en el documento.
+	</p>
+	<p>
+		<code>&lt;aside&gt;&lt;/aside&gt;</code> -> Representa un contenido secundario y/o sin relevancia en el documento.
+	</p>
+	<p>
+		<code>&lt;figure&gt;</code> -> Representa una figura en el documento.<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;figcaption&gt;&lt;/figcaption&gt;</code> -> Representa la nota al pié de la figura.<br /> 
+		<code>&lt;/figure&gt;</code>
+	</p>
+	<h2>Nuevos Elementos de Formulario</h2>
+	<p>
+		<label for="i-color">Input de tipo color</label> <input id="i-color" type="color" /><br />
+		<label for="i-date">Input de tipo date:</label> <input id="i-date" type="date" /><br />
+		<label for="i-email">Input de tipo email:</label> <input id="i-email" type="email" /><br />
+		<label for="i-number">Input de tipo number:</label> <input id="i-number" type="number" min="1" max="5" /><br />
+		<label for="i-range">Input de tipo range:</label> <input id="i-range" type="range" min="1" max="10" /><br />
+		<label for="i-search">Input de tipo search:</label> <input id="i-search" type="search" /><br />
+		<label for="i-tel">Input de tipo tel:</label> <input id="i-tel" type="tel" /><br />
+		<label for="i-time">Input de tipo time:</label> <input id="i-time" type="time" /><br />
+		<label for="i-url">Input de tipo url:</label> <input id="i-url" type="url" />
+	</p>
+</div>

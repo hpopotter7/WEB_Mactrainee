@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Fundamentos de jQuery</title>
+	<meta name="description" content="En este ejercicio aprenderemos los fundamentos de jQuery" />
+	<link rel="stylesheet" href="css/estilos.css" />
+	<!-- CDN = Content Delivery Network -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write("<script src='js/jquery.min.js'><\/script>");
+	</script>
+	<script src="js/efectos.js"></script>
+</head>
+<body>
+	<p>Si me presionan desapareceré</p>
+	<input type="button" id="boton" value="Mostrar" />
+	<input type="button" id="boton2" value="Ocultar con Velocidad" />
+	<input type="button" id="boton3" value="Mostrar con Velocidad" />
+	<input type="button" id="boton4" value="Cambio" />
+	<input type="button" id="boton5" value="Cambio con Velocidad" />
+	<br /><br />
+	<div class="capa-deslizante">
+		Esto es un texto que aparece y desaparece.
+		No es magia, ni flash, es el poder de jQuery.
+	</div>
+	<div class="mostrar">Mostrar Capa</div>
+	<div class="ocultar">Ocultar Capa</div>
+	<div class="mostrar-ocultar">Mostrar/Ocultar Capa</div>
+	<div id="cuadro"></div>
+	<input type="button" id="boton6" value="Opacidad 25" />
+	<input type="button" id="boton7" value="Opacidad 100" />
+	<input type="button" id="boton8" value="Fade Out" />
+	<input type="button" id="boton9" value="Fade In" />
+	<input type="button" id="parpadea" value="Parpadea" />
+	<div class="capa-animable"></div>
+	<input type="button" id="boton10" value="Animar" />
+	<div class="capa-animable2">HOLA</div>
+	<input type="button" id="boton11" value="Animar2" />
+	<p class="parrafo-oculto">Párrafo a ocultar</p>
+	<input type="button" id="boton12" value="Ocultar con alerta" />
+	<p>Este es un párrafo</p>
+	<input type="button" id="boton13" value="Cambiar p" />
+	<input type="button" id="boton14" value="Agregar p" />
+	<input type="button" id="boton15" value="Antes de p" />
+	<input type="button" id="boton16" value="Después de p" />
+	<input type="button" id="boton17" value="p con CSS" />
+	<input type="button" id="boton18" value="p con 2 o más CSS" />
+	<br />
+	<a href="#">Colocate aquí para modificar el texto de abajo</a>
+	<br />
+	<span>Este texto se modificará cuando el mouse este sobre el enlace de arriba</span>
+	<br />
+	<input type="button" id="boton19" value="contenido externo con AJAX" />
+	<input type="button" id="boton20" value="contenido externo con AJAX con efecto fancy" />
+	<div id="ajax">Aqui cargará un h1 de otro archivo html con AJAX y jQuery</div>
+</body>
+</html>
